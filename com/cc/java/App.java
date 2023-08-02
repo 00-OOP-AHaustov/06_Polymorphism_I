@@ -1,12 +1,14 @@
 package com.cc.java;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class App {
 
     public static void main(String[] args) {
-        List<HoneyBee> beehive = Arrays.asList(new Drone(), new Worker(), new Queen());
+        List<HoneyBee> beehive = new ArrayList<>(Arrays.asList(new Drone(), new Worker(), new Queen()));
+        beehive.add(new Drone());
         beehive.forEach((n) -> output(n));
 
     }
