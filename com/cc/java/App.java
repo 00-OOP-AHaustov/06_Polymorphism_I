@@ -8,9 +8,7 @@ public class App {
 
     public static void main(String[] args) {
         List<HoneyBee> beehive = new ArrayList<>(Arrays.asList(new Drone(), new Worker(), new Queen()));
-        beehive.add(new Drone());
         beehive.forEach((n) -> output(n));
-
     }
 
     private static void output(String outputStr) {
