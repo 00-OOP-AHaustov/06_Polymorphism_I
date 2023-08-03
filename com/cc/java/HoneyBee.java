@@ -1,7 +1,7 @@
 package com.cc.java;
 
-public abstract class HoneyBee {
-    String fly() {
+public abstract class HoneyBee implements IFlyable{
+    public String fly() {
         return "Brumm,brumm.";
     }
 
